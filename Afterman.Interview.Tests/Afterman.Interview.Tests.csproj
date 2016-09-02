@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.5.2.15\lib\net45\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -50,6 +54,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Problem1\TicTacToeEvaluatorTests.cs" />
+    <Compile Include="Problem2\DuplicateDetectorTests.cs" />
+    <Compile Include="Problem3\OrderBusTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,10 +65,10 @@
       <Name>Afterman.Interview</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Problem1\" />
-    <Folder Include="Problem2\" />
-    <Folder Include="Problem3\" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
