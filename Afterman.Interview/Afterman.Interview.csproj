@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NServiceBus.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NServiceBus.5.2.15\lib\net45\NServiceBus.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,10 +48,20 @@
     <Compile Include="Problem1\TicTacToeBoardExtensions.cs" />
     <Compile Include="Problem1\TicTacToeEvaluator.cs" />
     <Compile Include="Problem2\DuplicateDetector.cs" />
+    <Compile Include="Problem3\ConfigErrorQueue.cs" />
+    <Compile Include="Problem3\MockEmailSender.cs" />
+    <Compile Include="Problem3\MockOnlineStore.cs" />
+    <Compile Include="Problem3\MockOrderManagementService.cs" />
+    <Compile Include="Problem3\MockSupplyChainService.cs" />
+    <Compile Include="Problem3\OrderCreatedHandler.cs" />
+    <Compile Include="Problem3\OrderPlacedEvent.cs" />
+    <Compile Include="Problem3\PlaceOrderCommand.cs" />
+    <Compile Include="Problem3\PlaceOrderHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Problem3\" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
