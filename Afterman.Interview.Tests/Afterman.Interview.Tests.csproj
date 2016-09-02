@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Problem1\TicTacToeEvaluatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,7 +60,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Problem1\" />
     <Folder Include="Problem2\" />
     <Folder Include="Problem3\" />
   </ItemGroup>

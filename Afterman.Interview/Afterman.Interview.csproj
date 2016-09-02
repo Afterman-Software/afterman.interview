@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problem1\TicTacToeBoard.cs" />
+    <Compile Include="Problem1\TicTacToeBoardExtensions.cs" />
+    <Compile Include="Problem1\TicTacToeEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Problem1\" />
     <Folder Include="Problem2\" />
     <Folder Include="Problem3\" />
   </ItemGroup>
