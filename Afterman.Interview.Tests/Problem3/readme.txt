@@ -1,0 +1,1 @@
+﻿Test manually by running sln with the Multiple Startup Projects of Afterman.Interview.NServiceBus.*
