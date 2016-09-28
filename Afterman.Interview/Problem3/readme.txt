@@ -1,0 +1,1 @@
+﻿see Afterman.Interview.NServiceBus.* projects 
